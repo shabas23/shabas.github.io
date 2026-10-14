@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shabas V S | Data Engineer</title>
+  <meta name="description" content="Portfolio of Shabas V S - Data Analyst transitioning to Data Engineering, specializing in Python, SQL, PostgreSQL, and resilient pipeline design." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+            },
+            dark: {
+              bg: '#0b0f19',
+              card: '#111827',
+              border: '#1f2937',
+              muted: '#9ca3af'
+            }
+          },
+          fontFamily: {
+            mono: ['Fira Code', 'Courier New', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#0b0f19] text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-black">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-mono font-bold text-lg text-teal-400 hover:text-teal-300 transition-colors">
+        shabas.vs<span class="text-slate-500">/</span><span class="text-slate-300">de</span>
+      </a>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-teal-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-teal-400 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="https://github.com/shabas23" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="GitHub">
+          <i class="fab fa-github text-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shabasvs/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="LinkedIn">
+          <i class="fab fa-linkedin text-lg"></i>
+        </a>
+        <a href="#contact" class="px-3.5 py-1.5 text-xs font-semibold rounded-md bg-teal-500/10 text-teal-300 border border-teal-500/30 hover:bg-teal-500/20 transition-all">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pt-16 pb-24 space-y-28">
+
+    <!-- Hero Section -->
+    <section class="pt-12 pb-6 flex flex-col items-start gap-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-teal-950/60 text-teal-300 border border-teal-800/60">
+        <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+        Data Analyst ➔ Data Engineer
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">Shabas V S</span>.
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
+        Bridging the gap between raw data collection and actionable business intelligence. Grounded in analytics, focused on building scalable pipelines, clean relational data models, and automated ETL workflows with <span class="text-teal-300">Python</span>, <span class="text-teal-300">SQL</span>, and <span class="text-teal-300">PostgreSQL</span>.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 text-sm text-slate-400">
+        <div class="flex items-center gap-1.5">
+          <i class="fas fa-map-marker-alt text-teal-400"></i>
+          <span>Abu Dhabi, UAE</span>
+        </div>
+        <span class="text-slate-700">•</span>
+        <div class="flex items-center gap-1.5">
+          <i class="fas fa-briefcase text-teal-400"></i>
+          <span>Available for Data Engineering Roles</span>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-4 pt-4">
+        <a href="#projects" class="px-6 py-3 rounded-lg bg-teal-500 hover:bg-teal-400 text-black font-semibold text-sm transition-all shadow-lg shadow-teal-500/20 flex items-center gap-2">
+          <span>View Engineering Projects</span>
+          <i class="fas fa-arrow-down text-xs"></i>
+        </a>
+        <a href="https://github.com/shabas23" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg bg-gray-900 border border-gray-700 hover:border-gray-500 text-slate-200 text-sm font-semibold transition-all flex items-center gap-2">
+          <i class="fab fa-github"></i>
+          <span>GitHub Profile</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- The Pivot / About Section -->
+    <section id="about" class="border-t border-gray-800/80 pt-16">
+      <div class="grid md:grid-cols-12 gap-10 items-start">
+        <div class="md:col-span-4">
+          <h2 class="text-xs font-mono uppercase tracking-wider text-teal-400 mb-2">The Perspective</h2>
+          <h3 class="text-2xl font-bold text-white">Why Analytics Makes Better Engineering</h3>
+        </div>
+        <div class="md:col-span-8 space-y-5 text-slate-400 text-base leading-relaxed">
+          <p>
+            Having worked directly with business stakeholders as a Data Analyst, I know firsthand the pain points of inaccurate metrics, broken schemas, and silent pipeline failures. 
+          </p>
+          <p>
+            My engineering philosophy is simple: <strong class="text-slate-200">pipelines exist to serve real analytical outcomes</strong>. Instead of just moving data from point A to point B, I design schemas, write transformations, and implement constraints that guarantee data reliability downstream in tools like Power BI.
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 font-mono text-xs">
+            <div class="p-3 rounded-lg bg-gray-900/60 border border-gray-800">
+              <span class="text-teal-400 block font-bold text-sm">Automated</span>
+              Ingestion & Cleanup
+            </div>
+            <div class="p-3 rounded-lg bg-gray-900/60 border border-gray-800">
+              <span class="text-teal-400 block font-bold text-sm">Relational</span>
+              PostgreSQL Schemas
+            </div>
+            <div class="p-3 rounded-lg bg-gray-900/60 border border-gray-800">
+              <span class="text-teal-400 block font-bold text-sm">BI-Ready</span>
+              Reporting Views
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section id="skills" class="border-t border-gray-800/80 pt-16">
+      <div class="max-w-xl mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-wider text-teal-400 mb-2">Capabilities</h2>
+        <h3 class="text-2xl font-bold text-white">Technical Toolkit</h3>
+        <p class="text-slate-400 text-sm mt-2">Core technologies I actively write code in and architect pipelines with.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-4">
+              <i class="fab fa-python text-lg"></i>
+            </div>
+            <h4 class="font-semibold text-white">Python</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              ETL scripting, API ingestion, data validation, automated extraction routines, and data structure manipulation.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-800/60 flex flex-wrap gap-1.5 font-mono text-[11px] text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-gray-800">pandas</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">requests</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">SQLAlchemy</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-4">
+              <i class="fas fa-database text-lg"></i>
+            </div>
+            <h4 class="font-semibold text-white">SQL & Modeling</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Complex queries, CTEs, window functions, indexing, query optimization, and dimensional relational modeling.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-800/60 flex flex-wrap gap-1.5 font-mono text-[11px] text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-gray-800">DDL/DML</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">CTEs</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">Constraints</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-4">
+              <i class="fas fa-server text-lg"></i>
+            </div>
+            <h4 class="font-semibold text-white">PostgreSQL</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Schema design, materialized views, triggers, primary/foreign key relations, and transactional database integrity.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-800/60 flex flex-wrap gap-1.5 font-mono text-[11px] text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-gray-800">RDBMS</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">psycopg2</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">Indexing</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
+              <i class="fas fa-chart-pie text-lg"></i>
+            </div>
+            <h4 class="font-semibold text-white">Power BI & BI Marts</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Designing analytics-ready consumption views, semantic data models, DAX measures, and operational executive reports.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-800/60 flex flex-wrap gap-1.5 font-mono text-[11px] text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-gray-800">DAX</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">Data Modeling</span>
+            <span class="px-2 py-0.5 rounded bg-gray-800">DirectQuery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects (Architecture-focused) -->
+    <section id="projects" class="border-t border-gray-800/80 pt-16">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+        <div>
+          <h2 class="text-xs font-mono uppercase tracking-wider text-teal-400 mb-2">Portfolio</h2>
+          <h3 class="text-2xl font-bold text-white">Data Engineering Projects</h3>
+          <p class="text-slate-400 text-sm mt-1">End-to-end architectures from extraction to consumption.</p>
+        </div>
+        <a href="https://github.com/shabas23" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-teal-400 hover:text-teal-300 flex items-center gap-1.5">
+          <span>Browse all repositories</span>
+          <i class="fas fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+
+      <div class="space-y-10">
+        <!-- Project 1 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-teal-500/10 text-teal-300 border border-teal-500/20">End-to-End Pipeline</span>
+            <a href="https://github.com/shabas23" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white text-sm font-medium flex items-center gap-1.5">
+              <i class="fab fa-github"></i>
+              <span>View Repository</span>
+            </a>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-2">Automated E-Commerce Data Pipeline & Analytical Mart</h4>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+            Constructed a resilient Python pipeline that extracts raw transactions from REST endpoints, executes schema validation, loads into staging PostgreSQL tables, and creates optimized dimensional reporting views consumed directly by a Power BI sales performance dashboard.
+          </p>
+
+          <!-- Architecture Flow -->
+          <div class="p-4 rounded-xl bg-black/50 border border-gray-800 font-mono text-xs text-slate-300 mb-6 overflow-x-auto">
+            <div class="flex items-center gap-2 min-w-[580px]">
+              <span class="px-3 py-1.5 rounded bg-gray-800 text-slate-300 border border-gray-700">REST API (JSON)</span>
+              <span class="text-teal-400 font-bold">➔</span>
+              <span class="px-3 py-1.5 rounded bg-blue-950/80 text-blue-300 border border-blue-800">Python ETL / Pandas</span>
+              <span class="text-teal-400 font-bold">➔</span>
+              <span class="px-3 py-1.5 rounded bg-indigo-950/80 text-indigo-300 border border-indigo-800">PostgreSQL (Staging & Marts)</span>
+              <span class="text-teal-400 font-bold">➔</span>
+              <span class="px-3 py-1.5 rounded bg-amber-950/80 text-amber-300 border border-amber-800">Power BI Model</span>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4 text-xs">
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Engineering Focus</span>
+              <p class="text-slate-300 mt-1">Idempotent loading, exception handling, and primary key duplicate checks.</p>
+            </div>
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Modeling</span>
+              <p class="text-slate-300 mt-1">Star Schema (`fact_orders`, `dim_customers`, `dim_products`).</p>
+            </div>
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Stack</span>
+              <p class="text-slate-300 mt-1">Python, SQL, PostgreSQL, Power BI.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">Database Architecture</span>
+            <a href="https://github.com/shabas23" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white text-sm font-medium flex items-center gap-1.5">
+              <i class="fab fa-github"></i>
+              <span>View Repository</span>
+            </a>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-2">PostgreSQL Data Warehouse Modeling & Query Optimizer</h4>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+            Designed an operational relational schema handling simulated high-volume operational events. Implemented index optimization (B-tree, composite), partitioned historical audit logs, and benchmarked execution plans with <code class="text-teal-300 bg-gray-800 px-1 py-0.5 rounded font-mono">EXPLAIN ANALYZE</code> to reduce query times by over 60%.
+          </p>
+
+          <div class="p-4 rounded-xl bg-black/50 border border-gray-800 font-mono text-xs text-slate-300 mb-6 overflow-x-auto">
+            <div class="flex items-center gap-2 min-w-[540px]">
+              <span class="px-3 py-1.5 rounded bg-gray-800 text-slate-300 border border-gray-700">Raw Logs / Events</span>
+              <span class="text-teal-400 font-bold">➔</span>
+              <span class="px-3 py-1.5 rounded bg-indigo-950/80 text-indigo-300 border border-indigo-800">Partitioned Tables</span>
+              <span class="text-teal-400 font-bold">➔</span>
+              <span class="px-3 py-1.5 rounded bg-teal-950/80 text-teal-300 border border-teal-800">Materialized Views</span>
+              <span class="text-teal-400 font-bold">➔</span>
+              <span class="px-3 py-1.5 rounded bg-slate-800 text-slate-300 border border-gray-700">Sub-second Analytics</span>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4 text-xs">
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Key Technique</span>
+              <p class="text-slate-300 mt-1">Range partitioning by timestamp, materialized refresh schedules.</p>
+            </div>
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Metrics</span>
+              <p class="text-slate-300 mt-1">60%+ reduction in report load times across 1M+ simulated rows.</p>
+            </div>
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Stack</span>
+              <p class="text-slate-300 mt-1">PostgreSQL, SQL, Python (Mock Data Generation).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">Data Quality & Automation</span>
+            <a href="https://github.com/shabas23" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white text-sm font-medium flex items-center gap-1.5">
+              <i class="fab fa-github"></i>
+              <span>View Repository</span>
+            </a>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-2">Automated Data Quality & Schema Validation Engine</h4>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+            Built a lightweight Python-based quality assurance script that sits between ingestion and analytical storage. Runs automated checks for null constraints, foreign key orphans, out-of-range metrics, and type mismatches, logging anomalies directly to an audit database.
+          </p>
+
+          <div class="grid sm:grid-cols-3 gap-4 text-xs pt-2">
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Core Feature</span>
+              <p class="text-slate-300 mt-1">Pre-load assertions and exception catching before tables reach BI.</p>
+            </div>
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Reporting</span>
+              <p class="text-slate-300 mt-1">Automated summary logs & failure email notifications.</p>
+            </div>
+            <div>
+              <span class="text-slate-500 block uppercase font-mono tracking-wider">Stack</span>
+              <p class="text-slate-300 mt-1">Python, PostgreSQL, SQL.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="border-t border-gray-800/80 pt-16">
+      <div class="p-8 sm:p-12 rounded-2xl bg-gradient-to-b from-gray-900/60 to-black border border-gray-800 text-center max-w-3xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Let's Connect</h2>
+        <p class="text-slate-400 text-sm sm:text-base max-w-lg mx-auto mb-8">
+          I'm currently seeking Data Engineering opportunities in Abu Dhabi, the UAE, and open to remote roles. Let's discuss pipelines, data modeling, or data systems.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="mailto:shabasvsiyad@outlook.com" class="px-6 py-3 rounded-lg bg-teal-500 hover:bg-teal-400 text-black font-semibold text-sm transition-all flex items-center gap-2 shadow-lg shadow-teal-500/20">
+            <i class="fas fa-envelope"></i>
+            <span>shabasvsiyad@outlook.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/shabasvs/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 text-white font-medium text-sm transition-all flex items-center gap-2">
+            <i class="fab fa-linkedin text-blue-400"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/shabas23" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 text-white font-medium text-sm transition-all flex items-center gap-2">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center text-xs text-slate-600 font-mono">
+        © <span id="year"></span> Shabas V S • Hosted on GitHub Pages
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    feather.replace();
+  </script>
+</body>
+</html>
